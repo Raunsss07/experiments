@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events Example</title>
+    <style>
+        body {
+            display: flex;             /* center the button horizontally & vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+<button 
+    onmouseover="window.status='Mouse is over the button!'; return true;"
+    onmouseout="window.status=''; return true;"
+    onmousedown="window.status='Mouse button pressed!'; return true;"
+    onmouseup="window.status='Mouse button released!'; return true;"
+>
+    Click Me
+</button>
+
+</body>
+</html>

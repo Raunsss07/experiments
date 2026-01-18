@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Form</title>
+
+    <script>
+        function getNames() {
+            // take input from prompt boxes
+            var firstName = prompt("Enter your First Name:");
+            var lastName = prompt("Enter your Last Name:");
+
+            // put values into text boxes
+            document.getElementById("fname").value = firstName;
+            document.getElementById("lname").value = lastName;
+        }
+    </script>
+</head>
+<body onload="getNames()">
+
+<
